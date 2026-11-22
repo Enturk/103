@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f5;
+  color: #1c1c1c;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+header,
+main,
+footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid #1c1c1c;
+  background-color: transparent;
+  color: inherit;
+}
+
+.card {
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border: 1px solid #d4d4d4;
+}
+
+/* State toggled by JavaScript */
+body.dark-mode {
+  background-color: #161618;
+  color: #f2f2f2;
+}
+
+body.dark-mode header,
+body.dark-mode .card {
+  border-color: #3a3a40;
+}
+
+body.dark-mode button {
+  border-color: #f2f2f2;
+}
